@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4289885ab4.js" crossorigin="anonymous"></script>
+    
+</head>
+<body> 
+<div id="header">
+   
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+
+        </nav>
+        <div class="header-text">
+            <p>Student</p>
+            <h1> Hi, I'm <span>DAKSHAYANI</span></h1>
+            <h6>I'm learning Web Development with Career X<br>
+                pursuing Computer Science Engineering from CMRIT
+            </h6>
+        </div>
+        </div>
+        </div>
+
+
+        
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/pic3.png">
+
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <br>
+                        <p><h3>My Name Is Arudhali Dakshayani, And I Am A 22-Year-Old 
+                            Currently Pursuing B.Tech In Computer Science Engineering  
+                            At CMR Institute of Technology, Where I Have A Current GPA Of 7.0 
+                            Till My 4th Year 1st Semester. I Am Currently Learning 
+                            Web Development From Career X .</h3></p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Web Design</span><br>Learing Web Development Career X 
+                                        Having A Good Grip On HTML,CSS And JAVA-SCRIPT</li>
+                                    <li><span>Coding</span><br>Having A Knowledge About Coding Languages 
+                                        Such as C/C++ Python And Java</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Fresher</span><br>As a student, I'am looking to be a part of 
+                                    enthusiastic work environment,Where i can enhance my knowledge And
+                                    apply my technical skills to accomplish organizational goals</li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2023</span><br>BTech from CMRIT Hyderabad</li>
+                                    <li><span>2020</span><br>Diploma from government women's college,Pebbair</li>
+                                    <li><span>2016</span><br>SSC from CHS Wanparthy</li>
+                                    
+                                </ul>
+                            </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+<!-----   projects-----------------  ------>
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-user-graduate"></i>
+                <h2> Students performance prediction</h2>
+                <p> prediction in online courses using machine learning algorithm</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-calculator"></i>
+                <h2> Calculator</h2>
+                
+                <p> I Made my first JS project online calculater using HTML,CSS And Java Script</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-school"></i>
+                <h2> Web Design</h2>
+                <p> I made my first css project course-landing page of a play school using HTML,CSS </p>
+                <a href="#">Learn more</a>
+            </div>
+            </div>
+
+    </div>
+</div>
+
+
+
+<!---------------------------------contact -------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+               
+                <p><i  class="fa-solid fa-paper-plane"></i>dakshayaniyadav7@gmail.com</p>
+                <p ><i class="fa-solid fa-phone"></i>+91 6302626118</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <br>
+                <a href="images/ArudhaliDakshayani.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i>Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            
+        </div>
+    </div>
+    </div>
+    <div class="copyright">
+        <p>Thank You For Visiting have a Good day<i class="fa-regular fa-face-smile"></i></p>
+    </div>
+</div>
+        
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    
+    }
+</script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyePBAR_lxLZuU6yIxqAVWAbDkTyNKB9gtr2MDZ31DCeTR3BQMMMYNl1IpRPBAH29X7uQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHtml = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
